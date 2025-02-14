@@ -22,8 +22,8 @@ export function Bots() {
                     onClick={() => selectBot(bot)}
                     className="flex justify-center items-end bg-gray-800 rounded shadow-lg"
                     style={{
-                        width: "clamp(75px, 28vw, 160px)",
-                        height: "clamp(75px, 28vw, 160px)",
+                        width: "clamp(75px, 26vw, 160px)",
+                        height: "clamp(75px, 26vw, 160px)",
                         boxShadow: bot.name == selectedBot?.name ? "inset 0px 0px 20px rgba(10, 102, 206, 0.5)" : ""
                     }}
                 >
@@ -32,7 +32,7 @@ export function Bots() {
                             src={botsImages[bot.name]}
                             alt="bot_image"
                             style={{
-                                width: "clamp(30px, 10vw, 80px)",
+                                width: "clamp(30px, 8vw, 80px)",
                             }}
                         />
                         <div className="flex flex-col">
