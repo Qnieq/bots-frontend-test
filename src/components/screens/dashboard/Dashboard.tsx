@@ -16,7 +16,7 @@ export function Dashboard() {
         <div className="w-full h-full flex flex-col items-center gap-[5px]">
             <Balance />
             <Chart selectedBot={selectedBot} timeRange={timeRange} />
-            <div className="w-full h-full flex flex-col items-center gap-[15px]">
+            <div className="w-full h-full flex flex-col items-center gap-4">
                 <Bots />
                 <TimeRange />
             </div>
