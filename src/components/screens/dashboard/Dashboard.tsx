@@ -19,7 +19,7 @@ export function Dashboard() {
             <div
                 className="w-full flex flex-col items-center"
                 style={{
-                    gap: "clamp(10px, 5vw, 20px)"
+                    gap: "clamp(10px, 3vw, 20px)"
                 }}
             >
                 <Bots />

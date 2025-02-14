@@ -30,9 +30,10 @@ export function TimeRange() {
                 <Button
                     key={range}
                     onClick={() => setTimeRange(range as "24h" | "7d" | "30d" | "all_time")}
-                    className="flex justify-center items-center w-[50px] h-[20px] py-3 text-[9px] border-1 border-white rounded-full"
+                    className="flex justify-center items-center w-[50px] h-[20px] py-3 text-[9px] rounded-full"
                     style={{
-                        opacity: range == timeRange ? 1 : 0.5
+                        opacity: range == timeRange ? 1 : 0.5,
+                        border: "1px solid #fff"
                     }}
                 >
                     {formatting(range)}
