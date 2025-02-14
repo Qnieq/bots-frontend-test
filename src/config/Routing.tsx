@@ -2,14 +2,12 @@ import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import { MainLayout } from "../components/layout/main-layout/MainLayout";
 import { Dashboard } from "../components/screens/dashboard/Dashboard";
 import { AnyScreen } from "../components/screens/any-screen/AnyScreen";
-import { Analytics } from "@vercel/analytics/react"
 
 export function Routing() {
     return (
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<MainLayout />}>
-                    <Analytics />
                     <Route index element={<Navigate to="/dashboard" />} />
                     <Route path="/dashboard" element={<Dashboard />} />
                     <Route path="/megabot" element={<AnyScreen />} />
