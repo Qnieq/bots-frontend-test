@@ -19,9 +19,9 @@ export function TimeRange() {
     return (
         <div className="flex justify-center items-center gap-2 ">
             <h5
-                className="font-semibold opacity-[0.5]"
+                className="font-bold opacity-[0.5]"
                 style={{
-                    fontSize: "clamp(10px, 2vw, 12px)"
+                    fontSize: "clamp(11px, 2vw, 12px)"
                 }}
             >
                 Time Range:
