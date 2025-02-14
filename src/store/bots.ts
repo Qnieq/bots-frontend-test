@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { IBot } from "../types/bots.types";
 import { createJSONStorage, persist } from "zustand/middleware";
+import * as botsData from "../data/data.min.json"
 
 interface StoreState {
     bots: IBot[];
@@ -14,7 +15,7 @@ interface StoreState {
     setTradingData: (capital: number, balance: number, onHold: number) => void;
     selectBot: (bot: IBot) => void;
     setTimeRange: (range: "24h" | "7d" | "30d" | "all_time") => void;
-    setTradingDataFromJson: () => Promise<void>;
+    setTradingDataFromJson: () => void;
 }
 
 export const useBots = create<StoreState>()(
@@ -33,8 +34,7 @@ export const useBots = create<StoreState>()(
             selectBot: (bot) => set({ selectedBot: bot }),
             setTimeRange: (range) => set({ timeRange: range }),
             setTradingDataFromJson: async () => {
-                const response = await fetch("src/data/data.min.json");
-                const data = await response.json();
+                const data = botsData
                 set({
                     bots: data.bots,
                     tradingCapital: data.trading_capital,

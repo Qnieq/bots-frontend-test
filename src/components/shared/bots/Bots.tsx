@@ -2,12 +2,12 @@ import { useBots } from "../../../store/bots";
 import { Button } from "../../UI/Button";
 
 const botsImages: { [key: string]: string } = {
-    "yellow_bot": "/src/assets/bots/yellow.png",
-    "white_bot": "/src/assets/bots/black.png",
-    "green_bot": "/src/assets/bots/green.png",
-    "red_bot": "/src/assets/bots/red.png",
-    "blue_bot": "/src/assets/bots/blue.png",
-    "orange_bot": "/src/assets/bots/orange.png",
+    "yellow_bot": "/bots/yellow.png",
+    "white_bot": "/bots/black.png",
+    "green_bot": "/bots/green.png",
+    "red_bot": "/bots/red.png",
+    "blue_bot": "/bots/blue.png",
+    "orange_bot": "/bots/orange.png",
 }
 
 export function Bots() {

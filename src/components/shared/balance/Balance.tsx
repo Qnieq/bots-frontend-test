@@ -30,7 +30,7 @@ export function Balance() {
                             <span className="text-[13px] opacity-[0.6]">{item.title}</span>
                             <p className="text-[13px]">{item.value}</p>
                         </div>
-                        <img src="/src/assets/balance-icon.png" alt="icon" className="w-[23px] h-[23px]" />
+                        <img src="/balance-icon.png" alt="icon" className="w-[23px] h-[23px]" />
                     </div>
                 ))}
             </div>
