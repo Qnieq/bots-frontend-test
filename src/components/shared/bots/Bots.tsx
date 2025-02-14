@@ -32,7 +32,7 @@ export function Bots() {
                             src={botsImages[bot.name]}
                             alt="bot_image"
                             style={{
-                                width: "clamp(35px, 10vw, 80px)",
+                                width: "clamp(30px, 10vw, 80px)",
                             }}
                         />
                         <div className="flex flex-col">

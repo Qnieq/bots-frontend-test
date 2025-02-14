@@ -21,7 +21,15 @@ export function Balance() {
                 <h5 className="text-[0.8rem] opacity-[0.6] uppercase">
                     trading capital
                 </h5>
-                <h4 className="text-[2rem] leading-[50px] uppercase">{tradingCapital.toFixed(5)} {tradingCapitalCurrency}</h4>
+                <h4
+                    className="leading-[50px] uppercase"
+                    style={{
+                        fontSize: "clamp(1.5rem, 2vw, 2rem)",
+                        lineHeight: "clamp(40px, 4vw, 50px)"
+                    }}
+                >
+                    {tradingCapital.toFixed(5)} {tradingCapitalCurrency}
+                </h4>
             </div>
             <div className="flex flex-col">
                 {balanceData.map((item, index) => (
