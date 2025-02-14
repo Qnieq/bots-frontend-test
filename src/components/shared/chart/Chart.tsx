@@ -43,9 +43,8 @@ export function Chart({ selectedBot, timeRange }: IChart) {
     const [chartData, setChartData] = useState<{ name: string; value: number }[]>([]);
     const [chartHeight, setChartHeight] = useState<number>(calculateChartHeight());
   
-    // Метод для вычисления высоты графика на основе высоты окна
     function calculateChartHeight(): number {
-      const factor = 0.25; // 20% от высоты окна
+      const factor = 0.25; // 25% от высоты окна
       let height = window.innerHeight * factor;
       if (height < 140) height = 140;
       if (height > 400) height = 400;
@@ -58,7 +57,6 @@ export function Chart({ selectedBot, timeRange }: IChart) {
       }
     }, [selectedBot, timeRange]);
   
-    // Обновляем высоту при изменении размера окна
     useEffect(() => {
       function handleResize() {
         setChartHeight(calculateChartHeight());
